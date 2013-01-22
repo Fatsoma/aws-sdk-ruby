@@ -11,6 +11,9 @@
 # ANY KIND, either express or implied. See the License for the specific
 # language governing permissions and limitations under the License.
 
+# TODO: Only updated to 2013-01-10 for NewDBInstanceIdentifier. Need to update
+# rest of API
+
 module AWS
   class RDS
 
@@ -1175,6 +1178,9 @@ module AWS
       #     they are 10% greater than the current value. Type: Integer
       #   * +:option_group_name+ - (String) Indicates that the DB Instance
       #     should be associated with the specified option group.
+      #   * +:new_db_instance_identifier+ - (String) The new DB Instance
+      #     identifier for the DB Instance when renaming a DB Instance. This
+      #     value is stored as a lowercase string.
       # @return [Core::Response]
       #   The #data method of the response object returns
       #   a hash with the following structure:
@@ -1771,7 +1777,7 @@ module AWS
 
       # end client methods #
 
-      define_client_methods('2012-09-17')
+      define_client_methods('2013-01-10')
 
     end
   end
