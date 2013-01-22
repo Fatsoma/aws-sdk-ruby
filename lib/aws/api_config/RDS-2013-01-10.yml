@@ -11,8 +11,11 @@
 # ANY KIND, either express or implied. See the License for the specific
 # language governing permissions and limitations under the License.
 
+# TODO: Only updated to 2013-01-10 for NewDBInstanceIdentifier. Need to update
+# rest of API.
+
 ---
-:api_version: '2012-09-17'
+:api_version: '2013-01-10'
 :operations:
 - :name: AddTagsToResource
   :method: :add_tags_to_resource
@@ -1195,6 +1198,8 @@
     Iops:
     - :integer
     OptionGroupName:
+    - :string
+    NewDBInstanceIdentifier:
     - :string
   :outputs:
     :children:
